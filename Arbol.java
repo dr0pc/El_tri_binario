@@ -3,7 +3,7 @@ package arbol;
 public class Arbol {
 
 	Nodo_Arbol raiz;
-	
+	int c=0;
 	
 	public Arbol()
 	{
@@ -61,9 +61,14 @@ public void recorrido(Nodo_Arbol Raiz )
 	{
 	if (Raiz != null)
 		{
+		c++;
 		recorrido(Raiz.hijoizquierdo);
-		System.out.println(Raiz.dato);
+
+		System.out.println(Raiz.dato );
+		System.out.println(c);
+
 		recorrido(Raiz.hijoderecho);
+		c--;
 		}
 	}
 
@@ -74,3 +79,4 @@ public boolean vacio()
 	return raiz==null;
 	}
 }
+
