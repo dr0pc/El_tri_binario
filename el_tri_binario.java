@@ -10,7 +10,7 @@ public class el_tri_en_binario {
 		// TODO Auto-generated method stub
 
 	int opcion = 0, elemento;
-	String nombre;
+	String nombre ="";
 	Arbol Pobre_Soñador	= new Arbol();
 	
 		do {
@@ -20,7 +20,7 @@ public class el_tri_en_binario {
 				{
 				case 1:
 					elemento = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa un numero para agregar", "Agregar nodo", JOptionPane.QUESTION_MESSAGE));
-					nombre = JOptionPane.showInputDialog(null,"Cual sera el nombre del nodo");
+// quitar			nombre = JOptionPane.showInputDialog(null,"Cual sera el nombre del nodo");
 			
 					
 					Pobre_Soñador.Agregar_nodo(elemento, nombre);
